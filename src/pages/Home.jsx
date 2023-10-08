@@ -15,7 +15,7 @@ const Home = () => {
 
       <div className=" max-w-7xl my-10 mx-auto">
         <div>
-          <h1 className="text-4xl font-bold  text-center">Services</h1>
+          <h1 className="text-4xl font-bold py-10 text-center">Services</h1>
         </div>
         <div className="grid grid-col-2 lg:grid-cols-3 gap-5">
           {serviceData.map((service) => (

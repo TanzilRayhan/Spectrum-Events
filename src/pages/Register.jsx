@@ -1,15 +1,28 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../providers/AuthProvider";
 
 
 const Register = () => {
 
-    const handleRegister = e => {
-        e.preventDefault();
-        const name = e.target.name.value;
-        const email = e.target.email.value;
-        const password = e.target.password.value;
+  const {createUser} = useContext(AuthContext)
 
-        console.log(name, email, password);
+    const handleRegister = e => {
+      e.preventDefault()
+      const form = new FormData(e.currentTarget);
+      const name = form.get('name');
+      const photo = form.get('photo');
+      const email = form.get('email');
+      const password = form.get('password');
+      console.log(name, photo, email, password);
+      
+      createUser(email,password)
+      .then(result => {
+        console.log(result.user);
+      })
+      .catch(error=>{
+        console.error(error);
+      })
     }
 
     return (
@@ -25,6 +38,13 @@ const Register = () => {
                   <span className="label-text">Name</span>
                 </label>
                 <input type="text" name="name" placeholder="Name" className="input input-bordered" required />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Photo</span>
+                </label>
+                
+                <input type="text" name="name" placeholder="Photo URL" className="input input-bordered" required />
               </div>
               <div className="form-control">
                 <label className="label">
@@ -44,7 +64,7 @@ const Register = () => {
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Register</button>
               </div>
-              <p>Already Have an Account? Please<Link to="/login"><button className="btn btn-link">Login</button>
+              <p>Already Have an Account? Please <Link to="/login"><button className="btn-link font-bold">Login</button>
 </Link></p>
             </form>
             
