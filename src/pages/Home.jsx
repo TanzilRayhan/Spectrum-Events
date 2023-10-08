@@ -3,6 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import Footer from "./Footer";
 import Slider from "./Slider";
 
+
 const Home = () => {
   const serviceData = useLoaderData();
   console.log(serviceData);

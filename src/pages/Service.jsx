@@ -3,8 +3,8 @@ import Footer from "./Footer";
 const Service = () => {
   return (
     <div className=" max-w-7xl my-10 mx-auto">
-      <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col lg:flex-row">
+      <div className="hero min-h-screen">
+        <div className="hero-content flex-col text-center">
           <img
             src="/images/stock/photo-1635805737707-575885ab0820.jpg"
             className="max-w-sm rounded-lg shadow-2xl"
