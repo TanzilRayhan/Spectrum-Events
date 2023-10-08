@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "category": "Conference",
+        "title": "Tech Summit 2023",
+        "cover": "https://i.ibb.co/0GkHQCd/244455594-394175392337344-7419394046313873303-n.jpg",
+        "price": 299.99,
+        "shortDescription": "Join industry leaders and experts at the largest tech summit of the year.",
+        "details": "Tech Summit 2023 brings together professionals, entrepreneurs, and tech enthusiasts. Explore the latest trends, attend insightful sessions, and network with like-minded individuals."
+    },
+    {
+        "id": 2,
+        "category": "Expo",
+        "title": "FutureTech Expo",
+        "cover": "https://i.ibb.co/ys2qgb2/AR-VR-Featured-5.png",
+        "price": 49.99,
+        "shortDescription": "Discover the future of technology at the ultimate tech expo.",
+        "details": "FutureTech Expo showcases cutting-edge innovations in AI, robotics, VR, and more. Experience hands-on demonstrations, engage with tech experts, and gain insights into the next big breakthroughs."
+    },
+    {
+        "id": 3,
+        "category": "Gaming Event",
+        "title": "GameCon 2023",
+        "cover": "https://i.ibb.co/9HZhs18/YSW-0139.jpg",
+        "price": 39.99,
+        "shortDescription": "A celebration of gaming culture, featuring the latest games and esports competitions.",
+        "details": "GameCon 2023 is a must-attend event for gamers. Play unreleased games, participate in esports tournaments, and meet your favorite gaming influencers. Don't miss the excitement!"
+    },
+    {
+        "id": 4,
+        "category": "Hackathon",
+        "title": "CodeStorm Hackathon",
+        "cover": "https://i.ibb.co/f4hCnHc/0-rn-YWcm-RH4-Kbf-CWzt.webp",
+        "price": 19.99,
+        "shortDescription": "Calling all developers, designers, and innovators! Join the CodeStorm Hackathon.",
+        "details": "CodeStorm Hackathon is a 48-hour coding marathon where participants collaborate to solve real-world problems. Showcase your skills, build amazing projects, and compete for exciting prizes."
+    },
+    {
+        "id": 5,
+        "category": "Conference",
+        "title": "AI Innovation Summit",
+        "cover": "https://i.ibb.co/SxS1L8s/mfrack-photo-of-AI-4d689d6f-3ed2-4d6e-adde-562fd40d25a1.jpg",
+        "price": 149.99,
+        "shortDescription": "Explore the frontier of artificial intelligence at the AI Innovation Summit.",
+        "details": "AI Innovation Summit gathers leading AI researchers and professionals. Dive into deep technical sessions, learn about groundbreaking AI applications, and connect with thought leaders shaping the future of AI."
+    },
+    {
+        "id": 6,
+        "category": "Expo",
+        "title": "Robotics Expo 2023",
+        "cover": "https://i.ibb.co/xsWMTYF/d992efc5af4b439f66f7b0eaf4382bcd.jpg",
+        "price": 29.99,
+        "shortDescription": "Experience the latest advancements in robotics at Robotics Expo 2023.",
+        "details": "Robotics Expo 2023 showcases the diversity of robotics applications. From industrial robots to social robots, explore how robotics is transforming industries and daily life."
+    }
+]

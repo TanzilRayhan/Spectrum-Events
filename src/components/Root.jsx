@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 const Root = () => {
     return (
-        <div>
+        <div className=" font-Manrope">
             <Navbar></Navbar>
             <Outlet></Outlet>
         </div>
