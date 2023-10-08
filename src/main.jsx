@@ -11,6 +11,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Service from './pages/Service';
 import AuthProvider from './providers/AuthProvider';
+import PrivateRoute from './privateroute/PrivateRoute';
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/service/:id",
-        element: <Service></Service>
+        element: <PrivateRoute><Service></Service></PrivateRoute> 
       },
       {
         path: "/login",
