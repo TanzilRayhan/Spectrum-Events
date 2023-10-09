@@ -18,9 +18,12 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer:
 
-<i>Write your explanation here</i>
+- B: ReferenceError: greetign is not defined. 
+<i>
+JavaScript is case-sensitive, so greetign is treated as a different and undefined variable. As a result, ReferenceError indicating that greetign is not defined.
+</i>
 
 </p>
 </details>
@@ -43,9 +46,11 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: 
 
-<i>Write your explanation here</i>
+- C: "12"
+
+<i>In the sum function, you are using the + operator to concatenate a and b. When you call sum(1, "2"), JavaScript converts the numeric value 1 to a string to perform the concatenation. Therefore, the result is the string "12" (not a numeric sum).</i>
 
 </p>
 </details>
@@ -69,9 +74,11 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: 
 
-<i>Write your explanation here</i>
+-  A: ['🍕', '🍫', '🥑', '🍔'].
+
+<i>The info object has a property favoriteFood that initially references the first element of the food. info.favoriteFood is reassigned to "🍝". This reassignment doesn't affect the original food array; it only changes the value stored in the info object.</i>
 
 </p>
 </details>
@@ -94,9 +101,11 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: 
 
-<i>Write your explanation here</i>
+- B: Hi there, undefined.
+
+<i>In the sayHi function, the name parameter is not provided with a default value, and when the function is called with sayHi(), the name parameter is undefined. Therefore, the returned string will be "Hi there, undefined"</i>
 
 </p>
 </details>
@@ -122,9 +131,11 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: 
 
-<i>Write your explanation here</i>
+- B: 2.
+
+<i> The forEach loop iterates over each element in the nums array. The condition if (num) increments the count for truthy elements. Since 1 and 2 are truthy, count is incremented twice, resulting in a final value of 2.</i>
 
 </p>
 </details>

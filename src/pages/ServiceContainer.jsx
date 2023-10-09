@@ -7,7 +7,7 @@ const ServiceContainer = ({ service }) => {
   return (
     <div>
       <div className="hero my-20">
-        <div className="hero-content gap-10 flex text-left">
+        <div className="hero-content gap-10 flex flex-col lg:flex-row text-left">
           <img src={cover} className="max-w-xl rounded-lg" />
           <div>
             <h1 className="text-5xl font-bold">{title}</h1>
@@ -20,7 +20,8 @@ const ServiceContainer = ({ service }) => {
             </div>
             <h1 className="text-xl font-medium">{details}</h1>
             {/* The button to open modal */}
-            <label htmlFor="my_modal_7" className="btn my-5 btn-primary">
+            <div>
+            <label htmlFor="my_modal_7" className="btn my-5 btn-primary ">
               Buy Now
             </label>
 
@@ -34,6 +35,8 @@ const ServiceContainer = ({ service }) => {
               <label className="modal-backdrop" htmlFor="my_modal_7">
                 Close
               </label>
+            </div>
+
             </div>
           </div>
         </div>

@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
     <div>
-      <footer className="footer items-center p-4 py-10">
-        <aside className="items-center grid-flow-col">
+      <footer className="footer flex justify-between items-center p-4 py-10">
+        <aside className="grid-flow-col items-center">
           <svg
             width="36"
             height="36"
