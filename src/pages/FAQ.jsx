@@ -1,3 +1,5 @@
+import Footer from "./Footer";
+
 /* eslint-disable react-refresh/only-export-components */
 const FAQ = () => {
   return (
@@ -5,10 +7,10 @@ const FAQ = () => {
       <h1 className="text-5xl py-10 text-center font-bold">
         Frequently Asked Question(FAQ)
       </h1>
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-3xl mt-10 mb-20 mx-auto">
         <div className="collapse collapse-plus ">
           <input type="radio" name="my-accordion-3" checked="checked" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title text-2xl font-medium">
             What services does your event management service offer?{" "}
           </div>
           <div className="collapse-content">
@@ -22,7 +24,7 @@ const FAQ = () => {
         </div>
         <div className="collapse collapse-plus ">
           <input type="radio" name="my-accordion-3" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title text-2xl font-medium">
             What types of events do you specialize in managing?{" "}
           </div>
           <div className="collapse-content">
@@ -36,7 +38,7 @@ const FAQ = () => {
         </div>
         <div className="collapse collapse-plus">
           <input type="radio" name="my-accordion-3" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title text-2xl font-medium">
           Do you offer virtual event management services?          </div>
           <div className="collapse-content">
             <p>
@@ -46,7 +48,7 @@ const FAQ = () => {
         </div>
         <div className="collapse collapse-plus">
           <input type="radio" name="my-accordion-3" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title text-2xl font-medium">
           How does the pricing for your services work?          </div>
           <div className="collapse-content">
             <p>
@@ -59,7 +61,7 @@ const FAQ = () => {
         </div>
         <div className="collapse collapse-plus">
           <input type="radio" name="my-accordion-3" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title text-2xl font-medium">
             How can I request your event management services?{" "}
           </div>
           <div className="collapse-content">
@@ -72,6 +74,7 @@ const FAQ = () => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

@@ -1,8 +1,10 @@
+import Footer from "./Footer";
+
 const About = () => {
   return (
     <div>
       <h1 className="text-5xl py-10 font-bold text-center">About Us</h1>
-      <div className="max-w-3xl font-medium mx-auto">
+      <div className="max-w-3xl my-5 font-semibold mx-auto">
         Welcome to Spectrum Events, where events are not just occasions but
         experiences crafted with passion and precision. As a team of diverse
         professionals, we take pride in redefining event management with
@@ -36,6 +38,7 @@ const About = () => {
         management partner — we look forward to turning your vision into a
         reality.
       </div>
+      <Footer></Footer>
     </div>
   );
 };

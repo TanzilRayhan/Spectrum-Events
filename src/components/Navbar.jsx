@@ -12,16 +12,16 @@ const Navbar = () => {
     const navLinks = (
         <>
             <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink className="font-bold" to="/">Home</NavLink>
             </li>
             <li>
-                <NavLink to="/about">About Us</NavLink>
+                <NavLink className="font-bold" to="/about">About Us</NavLink>
             </li>
             <li>
-                <NavLink to="/contact">Contact Us</NavLink>
+                <NavLink className="font-bold" to="/contact">Contact Us</NavLink>
             </li>
             <li>
-                <NavLink to="/faq">FAQ</NavLink>
+                <NavLink className="font-bold" to="/faq">FAQ</NavLink>
             </li>
         </>
     );
@@ -53,7 +53,7 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <a href="/" className="btn btn-ghost normal-case text-xl font-Manrope ">
+                <a href="/" className="btn btn-ghost normal-case text-xl font-extrabold font-Manrope ">
                     Spectrum-Events
                 </a>
             </div>
@@ -72,7 +72,7 @@ const Navbar = () => {
                     </button>
                 ) : (
                     <Link to="/login">
-                        <button className="btn">Login</button>
+                        <button className="btn font-bold ">Login</button>
                     </Link>
                 )}
             </div>

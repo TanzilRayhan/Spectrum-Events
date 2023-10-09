@@ -1,11 +1,25 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 
 
 const Register = () => {
 
-  const {createUser} = useContext(AuthContext)
+  const {createUser} = useContext(AuthContext);
+  const { googleSignIn } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const handleGoogle = () => {
+    googleSignIn()
+      .then((result) => {
+        console.log(result.user);
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
 
     const handleRegister = e => {
       e.preventDefault()
@@ -67,6 +81,16 @@ const Register = () => {
               <p>Already Have an Account? Please <Link to="/login"><button className="btn-link font-bold">Login</button>
 </Link></p>
             </form>
+            <div className="flex justify-center py-3">
+            <button onClick={handleGoogle} className="btn">
+              <img
+                className="w-5"
+                src="https://i.ibb.co/b2CSKK1/Pik-Png-com-google-icon-png-344234.png "
+                alt=""
+              />
+              Sign in with Google
+            </button>
+          </div>
             
           </div>
         </div>
