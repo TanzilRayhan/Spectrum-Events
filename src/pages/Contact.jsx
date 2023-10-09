@@ -5,7 +5,7 @@ const Contact = () => {
     <div className="max-w-3xl mx-5 lg:mx-auto">
       <h1 className="text-5xl py-10 font-bold text-center">Contact Us</h1>
       <div className="mb-20">
-      <p className="text-md font-medium">Have questions, inquiries, or ready to start planning your next event?
+      <p className="text-lg lg:text-xl text-center pb-5 font-medium">Have questions, inquiries, or ready to start planning your next event?
         We are here to assist you every step of the way. Contact our team to
         discuss your event management needs, request a quote, or simply learn
         more about the services.
