@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 
 const ServiceCard = ({ serviceData }) => {
-  const { category, title, price, cover, shortDescription } = serviceData;
+  const { category, title, price, cover, shortDescription, id } = serviceData;
   return (
     <div>
       <div>
@@ -21,7 +21,7 @@ const ServiceCard = ({ serviceData }) => {
             <h2 className="card-title">{title}</h2>
             <p>{shortDescription}</p>
             <div className="card-actions justify-end">
-              <Link to="/service">
+              <Link to={`/service/${id}`}>
                 <button className="btn btn-primary">Show Details</button>
               </Link>
             </div>

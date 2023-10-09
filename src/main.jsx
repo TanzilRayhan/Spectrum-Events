@@ -14,11 +14,14 @@ import AuthProvider from './providers/AuthProvider';
 import PrivateRoute from './privateroute/PrivateRoute';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import FAQ from './pages/FAQ';
+import ErrorPage from './pages/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -26,8 +29,9 @@ const router = createBrowserRouter([
         loader: () => fetch('/data.json')
       },
       {
-        path: "/service",
-        element: <PrivateRoute><Service></Service></PrivateRoute> 
+        path: "/service/:id",
+        element: <PrivateRoute><Service></Service></PrivateRoute> ,
+        loader: () => fetch('/data.json')
       },
       {
         path: "/login",
@@ -45,6 +49,11 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact></Contact>
       },
+      {
+        path: "/faq",
+        element: <FAQ></FAQ>
+      },
+      
       
  
  
