@@ -8,7 +8,7 @@ const ServiceContainer = ({ service }) => {
     <div>
       <div className="hero my-20">
         <div className="hero-content gap-10 flex flex-col lg:flex-row text-left">
-          <img src={cover} className="max-w-xl rounded-lg" />
+          <img src={cover} className="lg:max-w-xl rounded-lg" />
           <div>
             <h1 className="text-5xl font-bold">{title}</h1>
             <p className="py-2">{shortDescription}</p>
@@ -18,7 +18,7 @@ const ServiceContainer = ({ service }) => {
                 Price: ${price}
               </div>
             </div>
-            <h1 className="text-xl font-medium">{details}</h1>
+            <h1 className=" text-lg lg:text-xl font-medium">{details}</h1>
             {/* The button to open modal */}
             <div>
             <label htmlFor="my_modal_7" className="btn my-5 btn-primary ">

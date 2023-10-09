@@ -53,7 +53,7 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <a href="/" className="btn btn-ghost normal-case text-xl font-extrabold font-Manrope ">
+                <a href="/" className="btn btn-ghost normal-case lg:text-xl font-extrabold font-Manrope ">
                     Spectrum-Events
                 </a>
             </div>

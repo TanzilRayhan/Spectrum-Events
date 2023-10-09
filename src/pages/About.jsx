@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div>
       <h1 className="text-5xl py-10 font-bold text-center">About Us</h1>
-      <div className="max-w-3xl my-5 font-semibold mx-auto">
+      <div className="max-w-3xl text-center lg:text-left my-5 font-semibold mx-5 lg:mx-auto">
         Welcome to Spectrum Events, where events are not just occasions but
         experiences crafted with passion and precision. As a team of diverse
         professionals, we take pride in redefining event management with

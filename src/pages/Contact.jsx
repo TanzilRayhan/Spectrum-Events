@@ -2,7 +2,7 @@ import Footer from "./Footer";
 
 const Contact = () => {
   return (
-    <div className="max-w-3xl mx-auto">
+    <div className="max-w-3xl mx-5 lg:mx-auto">
       <h1 className="text-5xl py-10 font-bold text-center">Contact Us</h1>
       <div className="mb-20">
       <p className="text-md font-medium">Have questions, inquiries, or ready to start planning your next event?
