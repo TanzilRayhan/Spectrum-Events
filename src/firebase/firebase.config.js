@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyB_YnWZrhoubtq7LXpDXYvfMWzgvqqcJqU",
-  authDomain: "spectrum-events.firebaseapp.com",
-  projectId: "spectrum-events",
-  storageBucket: "spectrum-events.appspot.com",
-  messagingSenderId: "751343398887",
-  appId: "1:751343398887:web:c7060ab8a2dbee6b2cd742"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId
 };
 
 // Initialize Firebase
